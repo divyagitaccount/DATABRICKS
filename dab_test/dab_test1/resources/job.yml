@@ -1,0 +1,15 @@
+resources:
+  jobs:
+    New_Job_Feb_26_2026_05_17_PM:
+      name: New Job Feb 26, 2026, 05:17 PM
+      tasks:
+        - task_key: dab_foreign
+          notebook_task:
+            notebook_path: ../src/foreign_catalog.ipynb
+            base_parameters:
+              catalog: dummy1
+              schema: dummy2
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
